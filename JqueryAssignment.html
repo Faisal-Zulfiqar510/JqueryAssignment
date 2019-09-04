@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Jquery Assignment</title>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='form-style.css' type='text/css' />
+  <script src="ipAddressValidator.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+
+
+    </head>
+<body>
+
+<input type='text' name='text1' id="inputTxt"/>
+<input type="submit" name="submit" value="Add Row" id="btnSubmit" onclick="ValidateIPAddress(document.getElementById('inputTxt').value)">
+<table id="datatable" style="text-align: center">
+  <thead>
+  <tr>
+    <th>IP</th>
+    <th>Country_Name</th>
+    <th>Country_Code</th>
+    <th></th>
+
+  </tr>
+  </thead>
+  <tr>
+    <td>113.203.246.0</td>
+    <td>Pakistan</td>
+    <td>PK</td>
+    <td><button id="removeBtn" onclick="removeParents()">Delete Row</button></td>
+
+  </tr>
+</table>
+
+</body>
+</html>
