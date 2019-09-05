@@ -1,0 +1,13 @@
+
+#inputTxt {
+  font-size: 14pt;
+  margin: 10px 10px 10px 5px;
+
+}
+input:focus, textarea:focus{
+  background-color: lightyellow;
+}
+#ipInfoTable{
+  text-align: center;
+}
+
