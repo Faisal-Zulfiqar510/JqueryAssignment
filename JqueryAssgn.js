@@ -31,15 +31,15 @@ function ajaxCall(ip) {
 
 }
 
-function removeParents(r) {
+/*function removeParents(r) {
   var i = r.parentNode.parentNode.rowIndex;
   console.log(i);
   var tab = $('#datatable').DataTable();
   tab.row(i).remove().draw();
 
-}
-/*function removeParents() {
+}*/
+function removeParents() {
   var btn=$('#removeBtn');
   btn.closest('tr').remove().draw();
 
-}*/
+}
