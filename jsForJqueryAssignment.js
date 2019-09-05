@@ -13,7 +13,6 @@ function characterCheck(e){
         return false;
     }
     else if (key==13){
-        console.log($('#inputTxt').val());
         ValidateIPAddress($('#inputTxt').val());
         return true;
     }
@@ -63,27 +62,4 @@ function removeParents(r) {
 
 }
 
-/*function removeParents() {
-    var table = $('#ipInfoTable').DataTable();
 
-    $('#ipInfoTable tbody').on( 'click', 'tr', function () {
-        if ( $(this).hasClass('sel') ) {
-            $(this).removeClass('sel');
-        }
-        else {
-            table.$('tr.sel').removeClass('sel');
-            $(this).addClass('sel');
-        }
-    } );
-
-   // $('#removeBtn').click( function () {
-        table.row('.selected').remove().draw( false );
-    //} );
-
-}*/
-
-/*function removeParents() {
-  var btn=$('#removeBtn');
-  btn.parents('tr').remove();
-
-}*/
