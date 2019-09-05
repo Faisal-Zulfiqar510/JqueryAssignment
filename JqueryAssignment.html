@@ -7,18 +7,20 @@
     src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
-    <link rel='stylesheet' href='form-style.css' type='text/css' />
-  <script src="ipAddressValidator.js"></script>
+  <script src="jquery-3.4.1.js"></script>
+    <link rel='stylesheet' href='styleForJqueryAssignment.css' type='text/css' />
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script src="jsForJqueryAssignment.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
 
     </head>
 <body>
 
-<input type='text' name='text1' id="inputTxt"/>
-<input type="submit" name="submit" value="Add Row" id="btnSubmit" onclick="ValidateIPAddress(document.getElementById('inputTxt').value)">
-<table id="datatable" style="text-align: center">
+<input type='text' name='text1' id="inputTxt" onkeypress="characterCheck(event);" required/>
+<input type="submit" class="btn btn-outline-success" name="submit" value="Add Row" id="btnSubmit" onclick="ValidateIPAddress(document.getElementById('inputTxt').value)">
+<table id="ipInfoTable">
   <thead>
   <tr>
     <th>IP</th>
@@ -28,13 +30,14 @@
 
   </tr>
   </thead>
+  <tbody>
   <tr>
     <td>113.203.246.0</td>
     <td>Pakistan</td>
     <td>PK</td>
-    <td><button id="removeBtn" onclick="removeParents()">Delete Row</button></td>
-
+    <td><button class="btn btn-outline-danger" id="removeBtn" onclick="removeParents(this)">Delete Row</button></td>
   </tr>
+  </tbody>
 </table>
 
 </body>
